@@ -8,3 +8,4 @@ WantedBy=multi-user.target
 Type=simple
 ExecStart=%s %s/main.py --path=%s
 Restart=always
+RestartSec=10
