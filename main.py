@@ -1,5 +1,6 @@
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
+from getpass import getuser
 import subprocess
 import click
 import time
@@ -27,7 +28,7 @@ def update_pdf(event):
 
 
 @click.command()
-@click.option('--path', default='/home', show_default=True, help='Base path where file changes will be detected')
+@click.option('--path', default='/home/' + getuser(), show_default=True, help='Base path where file changes will be detected')
 @click.option('--recursive', default=True, show_default=True, help='Detect recursively')
 def main(path, recursive):
     # look for every .xopp file update
