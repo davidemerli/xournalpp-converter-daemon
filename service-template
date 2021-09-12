@@ -1,0 +1,10 @@
+[Unit]
+Description=Daemon that converts Xournal++ (.xopp) files into pdf files
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=%s %s/main.py --path=%s
+Restart=always
