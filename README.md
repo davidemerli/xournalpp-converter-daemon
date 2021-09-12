@@ -1,4 +1,4 @@
-# Xournal++ Autoconverter Deamon (.xopp to .pdf)
+# Xournal++ Autoconverter Daemon (.xopp to .pdf)
 
 ## Description
 
